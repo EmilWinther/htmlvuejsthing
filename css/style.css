@@ -1,0 +1,72 @@
+.header {
+    border-top: 5px solid white;
+    background-color:#343A40;
+    color:white;
+    text-align: center;
+    padding: 20px;
+    font-family: monospace;
+  }
+
+
+body {
+    background-color: cornsilk;
+}
+.card-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+h1 {
+    color: black;
+    text-align:center;
+}
+p
+{
+  font-family: monospace;
+    font-size: 20px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    font-family: monospace;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: cornsilk;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: monospace;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: cornsilk;
+    color: black;
+    font-family: monospace;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+    font-family: monospace;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    text-align: center;
+    font-size: 30px;
+    font-family: monospace;
+  }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class = "navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href='#'>Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <a target="_blank" href="https://www.zealand.dk/" class="nav-link"><li class="nav-item">Zealand</li></a>
+            <a href="carPage.html" class="nav-link"><li>Cars</li></a>
+            <a href="aboutme.html"class="nav-link"><li>About me</li></a>
+        </ul>
+    </nav>
+    <div id='app' class="header">
+        <p>displays my name with data vue.js</p>
+        <h1 class=>{{firstName}} {{lastName}}</h1>
+        <p>Displays a list of data in vue.js</p>
+        <ul id='app'>
+            <li v-for="name in names">{{name}}</li>
+        </ul>
+        <ul id='app'>
+            <li v-for="(name, index) in names" :key="index">{{name}}</li>
+        </ul>
+    </div>
+    <div class="SaleSpeech">
+        <p>Lorem ipsum dolor sit amet</p>
+    </div>
+    <div class="grid-container">
+        <div>
+            hello guys its me
+        </div>
+        <div>
+            hello guys its not me
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+<div class="card-footer">
+    <button type="button" onclick='document.getElementById("jstest").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+    <button onclick="document.getElementById('myImage').src='img/fillstar.png'">Turn on the light</button>
+    <img id="myImage" src="img/star.png" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='img/star.png'">Turn off the light</button>
+</div>
+</html>
